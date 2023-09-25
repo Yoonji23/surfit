@@ -7,27 +7,27 @@ const Header = () => {
     <SHeaderContainer>
       <SHeaderInner>
         <div className="headerNavBox">
-          <div className="p12">
+          <div className="p12 pointer">
             <Logo />
           </div>
           <div>
-            <nav className="">
+            <nav>
               <ul className="listStyleNone headerNavBox">
-                <li className="p06">홈 피드</li>
-                <li className="p06 after">스타트업 채용</li>
-                <li className="p06">디렉토리</li>
-                <li className="p06 before">커리어프로필</li>
-                <li className="p06">제안받기</li>
+                <li className="p06 pointer">홈 피드</li>
+                <li className="p06 after pointer">스타트업 채용</li>
+                <li className="p06 pointer">디렉토리</li>
+                <li className="p06 before pointer">커리어프로필</li>
+                <li className="p06 pointer">제안받기</li>
               </ul>
             </nav>
           </div>
         </div>
         <SHeaderSearchBox>
-          <div>
+          <div className="pointer m7">
             <Search />
           </div>
-          <div className="m7">로그인</div>
-          <div className="m29 before">기업서비스</div>
+          <div className="ml7 pointer">로그인</div>
+          <div className="m29 before pointer">기업서비스</div>
         </SHeaderSearchBox>
       </SHeaderInner>
     </SHeaderContainer>
@@ -52,8 +52,9 @@ const SHeaderInner = styled.div`
   height: 100%;
   padding: 0 24px;
   color: white;
-  font-size: 15;
+  font-size: 15px;
   font-weight: 600;
+
   .headerNavBox {
     display: flex;
     align-items: center;
@@ -77,16 +78,22 @@ const SHeaderInner = styled.div`
     padding-left: 4px;
     color: #e35131;
   }
+  .pointer {
+    cursor: pointer;
+  }
 `;
 const SHeaderSearchBox = styled.div`
   align-items: center;
   display: flex;
 
-  .m7 {
+  .ml7 {
     margin-left: 7px;
   }
   .m29 {
     margin-left: 29px;
+  }
+  .m7 {
+    margin: 0 7px;
   }
 `;
 export default Header;
