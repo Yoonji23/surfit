@@ -4,7 +4,12 @@
 .App {
   background-color: black;
 }
-
+h1 {
+  color: white;
+}
+button {
+  cursor: pointer;
+}
 /* .Header {
   color: white;
   padding: 20px;
