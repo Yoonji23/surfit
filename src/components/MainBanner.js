@@ -6,7 +6,7 @@ const MainBanner = () => {
         <SBannerBox>
           <h1>
             매일 성장하고
-            <br></br>더 멋지게 일하세요
+            <br />더 멋지게 일하세요
           </h1>
           <p>이제 새 탭에서 커리어 성장이 시작됩니다.</p>
           <SBannerBtn>
@@ -25,6 +25,10 @@ const SBannerBackground = styled.div`
   height: 55vh;
   width: 100%;
   background-color: #c1752a;
+  //배경 이미지 어둡게 만든 뒤 그 위에 글씨.
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://storage.surfit.io/env/landing/Kvn8K/img-18287387846437f56f24fcb.jpg");
+  background-size: cover;
 `;
 
 const SBannerBox = styled.div`
